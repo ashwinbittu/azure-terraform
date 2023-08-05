@@ -39,7 +39,7 @@ rm -rf /usr/local/bin/terraform
 ## Step-03: MACOS: IDE for Terraform - VS Code Editor
 - [Microsoft Visual Studio Code Editor](https://code.visualstudio.com/download)
 - [Hashicorp Terraform Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
-- Configure [Course Github Repository](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure) using VS Code Editor
+
 
 
 ## Step-04: MACOS: Install Azure CLI
@@ -125,23 +125,3 @@ az account set --subscription="SUBSCRIPTION_ID"
 - Copy the `terraform.exe` to a `terraformbins`
 - Set PATH in windows 
 
-### Step-07-04: Configure Course Git Repo 
-- [Course Git Repo](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure)
-- Shorten Course folder name to smaller one. Put it in C:\ Drive root path
-
-### Step-07-05: Install Visual Studio Code and Terraform Plugin
-- [Microsoft Visual Studio Code Editor](https://code.visualstudio.com/download)
-- [Hashicorp Terraform Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
-- Configure [Course Github Repository](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure) using VS Code Editor
-
-### Step-07-06: WindowsOS: Long Path Issues for Terraform CLI
-- [Windows10 Long File Name or Path](https://github.com/hashicorp/terraform/issues/21173)
-- [Microsoft fix](https://answers.microsoft.com/en-us/windows/forum/all/windows-10-commands-with-long-path-name-are-not/13f0f7c7-d55c-4c6c-b19d-9dfec099dd45)
-- Our fix is to shorten our git repo names to see if that helps
-
-## Step-08: LinuxOS: Terraform & Azure CLI Install
-- [Download Terraform](https://www.terraform.io/downloads.html)
-- [Linux OS - Terraform Install](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-- Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=script)
-- `Step-05:Terraform - Authenticating using the Azure CLI` is going to be same for LinuxOS too. 
-- [Course Git Repo](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure)

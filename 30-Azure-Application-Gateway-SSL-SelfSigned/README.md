@@ -32,13 +32,7 @@ There are quite a few fields but you can leave some blank
 For some fields there will be a default value,
 If you enter '.', the field will be left blank.
 -----
-Country Name (2 letter code) []:IN
-State or Province Name (full name) []:Telangana
-Locality Name (eg, city) []:Hyderabad
-Organization Name (eg, company) []:stacksimplify
-Organizational Unit Name (eg, section) []:Cloud Courses
-Common Name (eg, fully qualified host name) []:terraformguru.com
-Email Address []:stacksimplify@gmail.com
+
 Kalyans-Mac-mini:ssl-self-signed kalyanreddy$ 
 
 # Verify files 

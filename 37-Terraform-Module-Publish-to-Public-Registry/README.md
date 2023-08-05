@@ -30,7 +30,7 @@ description: Learn Terraform Module Publish to Terraform Public Registry
 ```t
 # Clone Github Repo
 git clone https://github.com/<YOUR_GITHUB_ID>/<YOUR_REPO>.git
-git clone https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
+git clone https://github.com/ashwinbittu/terraform-azurerm-staticwebsitepublic.git
 ```
 
 ## Step-04: Copy files from terraform-manifests to local repo & Check-In Code
@@ -49,7 +49,7 @@ git commit -am "TF Module Files First Commit"
 git push
 
 # Verify the same on Remote Repository
-https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
+https://github.com/ashwinbittu/terraform-azurerm-staticwebsitepublic.git
 ```
 
 

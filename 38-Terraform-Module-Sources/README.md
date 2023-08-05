@@ -27,13 +27,13 @@ module "azure_static_website" {
   #version = "1.0.0"
 
   # Github Clone over HTTPS 
-  source = "github.com/stacksimplify/terraform-azurerm-staticwebsitepublic"
+  source = "github.com/ashwinbittu/terraform-azurerm-staticwebsitepublic"
 
   # Github Clone over SSH (if git SSH configured with your repo - https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-  #source = "git@github.com:stacksimplify/terraform-azurerm-staticwebsitepublic.git"
+  #source = "git@github.com:ashwinbittu/terraform-azurerm-staticwebsitepublic.git"
 
   # Github HTTPS with selecting a Specific Release Tag
-  #source = "git::https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git?ref=1.0.0"
+  #source = "git::https://github.com/ashwinbittu/terraform-azurerm-staticwebsitepublic.git?ref=1.0.0"
 
   # Resource Group
   location = "eastus"

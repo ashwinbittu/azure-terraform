@@ -7,7 +7,7 @@ description: Create Azure Application Gateway Path based Routing using Terraform
   - /app1/* -> App1 VMSS
   - /app2/* -> App2 VMSS
 2. Root Context Redirection to some external site
-  - /*      -> External Site `stacksimplify.com`
+  - /*      -> External Site `<site>.com`
   
 ## Step-01: c7-01-web-linux-vmss-input-variables.tf
 ```t
@@ -65,11 +65,11 @@ sudo systemctl start httpd
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo chmod -R 777 /var/www/html 
-sudo echo "Welcome to stacksimplify - WebVM App1 - VM Hostname: $(hostname)" > /var/www/html/index.html
+sudo echo "WebVM App1 - VM Hostname: $(hostname)" > /var/www/html/index.html
 sudo mkdir /var/www/html/app1
-sudo echo "Welcome to stacksimplify - WebVM App1 - VM Hostname: $(hostname)" > /var/www/html/app1/hostname.html
-sudo echo "Welcome to stacksimplify - WebVM App1 - App Status Page" > /var/www/html/app1/status.html
-sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(250, 210, 210);"> <h1>Welcome to Stack Simplify - WebVM APP-1 </h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | sudo tee /var/www/html/app1/index.html
+sudo echo "WebVM App1 - VM Hostname: $(hostname)" > /var/www/html/app1/hostname.html
+sudo echo "WebVM App1 - App Status Page" > /var/www/html/app1/status.html
+sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(250, 210, 210);"> <h1> WebVM APP-1 </h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | sudo tee /var/www/html/app1/index.html
 sudo curl -H "Metadata:true" --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2020-09-01" -o /var/www/html/app1/metadata.html
 CUSTOM_DATA  
 }
@@ -303,11 +303,11 @@ sudo systemctl start httpd
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo chmod -R 777 /var/www/html 
-sudo echo "Welcome to stacksimplify - WebVM App2 - VM Hostname: $(hostname)" > /var/www/html/index.html
+sudo echo "WebVM App2 - VM Hostname: $(hostname)" > /var/www/html/index.html
 sudo mkdir /var/www/html/app2
-sudo echo "Welcome to stacksimplify - WebVM App2 - VM Hostname: $(hostname)" > /var/www/html/app2/hostname.html
-sudo echo "Welcome to stacksimplify - WebVM App2 - App Status Page" > /var/www/html/app2/status.html
-sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(60, 179, 113);"> <h1>Welcome to Stack Simplify - WebVM APP-2 </h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | sudo tee /var/www/html/app2/index.html
+sudo echo "WebVM App2 - VM Hostname: $(hostname)" > /var/www/html/app2/hostname.html
+sudo echo "WebVM App2 - App Status Page" > /var/www/html/app2/status.html
+sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(60, 179, 113);"> <h1> WebVM APP-2 </h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | sudo tee /var/www/html/app2/index.html
 sudo curl -H "Metadata:true" --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2020-09-01" -o /var/www/html/app2/metadata.html
 CUSTOM_DATA  
 }
